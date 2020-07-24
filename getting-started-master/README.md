@@ -29,14 +29,15 @@ Using project "default".
 You are now logged into the cluster.
 ## Before Proceeding to other assignments
 ### switch to your project (Assigned by cluster admin) using 'oc project <project name>
-mgadagin@MAHANTESHs-MBP day3-simple-stuff % oc project mgadagin
-Now using project "mgadagin" on server "https://c100-e.us-east.containers.cloud.ibm.com:31920".
-mgadagin@MAHANTESHs-MBP day3-simple-stuff % oc new-app --name=simple https://github.com/mahagmath/day3-simple-stuff.git
---> Found container image 3e170c7 (6 weeks old) from docker.io for "docker.io/ibmcom/websphere-liberty:20.0.0.5-full-java11-openj9-ubi"
-
+    mgadagin@MAHANTESHs-MBP day3-simple-stuff % oc project mgadagin
+    Now using project "mgadagin" on server "https://c100-e.us-east.containers.cloud.ibm.com:31920".
+    
+    mgadagin@MAHANTESHs-MBP day3-simple-stuff % oc new-app --name=simple https://github.com/mahagmath/day3-simple-stuff.git
+    Found container image 3e170c7 (6 weeks old) from docker.io for "docker.io/ibmcom/websphere-liberty:20.0.0.5-full-java11-openj9-ubi"
+    
     Red Hat Universal Base Image 8 
     ------------------------------ 
-    The Universal Base Image is designed and engineered to be the base layer for all of your containerized applications, middleware and utilities. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.
+    The Universal Base Image is designed and engineered to be the base layer for all of your containerized applications, middleware and utilities. This     base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is             maintained by Red Hat and updated regularly.
 
     Tags: base rhel8
 
@@ -44,14 +45,13 @@ mgadagin@MAHANTESHs-MBP day3-simple-stuff % oc new-app --name=simple https://git
     * A Docker build using source code from https://github.com/mahagmath/day3-simple-stuff.git will be created
       * The resulting image will be pushed to image stream tag "simple:latest"
       * Every time "websphere-liberty:20.0.0.5-full-java11-openj9-ubi" changes a new build will be triggered
-
---> Creating resources ...
+    Creating resources ...
     imagestream.image.openshift.io "websphere-liberty" created
     imagestream.image.openshift.io "simple" created
     buildconfig.build.openshift.io "simple" created
     deployment.apps "simple" created
     service "simple" created
---> Success
+    Success
     Build scheduled, use 'oc logs -f bc/simple' to track its progress.
     Application is not exposed. You can expose services to the outside world by executing one or more of the commands below:
      'oc expose svc/simple' 
