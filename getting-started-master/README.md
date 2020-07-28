@@ -34,7 +34,11 @@ Now using project "mgadagin" on server "https://c100-e.us-east.containers.cloud.
 mgadagin@MAHANTESHs-MBP day3-simple-stuff % oc new-app --name=simple https://github.com/mahagmath/day3-simple-stuff.git
 --> Found container image 3e170c7 (6 weeks old) from docker.io for "docker.io/ibmcom/websphere-liberty:20.0.0.5-full-java11-openj9-ubi"
 
-    Red Hat Universal Base Image 8 
+	mgadagin@MAHANTESHs-MBP day3-simple-stuff % oc project mgadagin
+	Now using project "mgadagin" on server "https://c100-e.us-east.containers.cloud.ibm.com:31920".
+	mgadagin@MAHANTESHs-MBP day3-simple-stuff % oc new-app --name=simple https://github.com/mahagmath/day3-simple-stuff.git
+	--> Found container image 3e170c7 (6 weeks old) from docker.io for "docker.io/ibmcom/websphere-liberty:20.0.0.5-full-java11-openj9-ubi"
+	Red Hat Universal Base Image 8 
     ------------------------------ 
     The Universal Base Image is designed and engineered to be the base layer for all of your containerized applications, middleware and utilities. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.
 
